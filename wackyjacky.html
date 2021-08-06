@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WackyJacky Live</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+    <body>
+    <div id="app" class="container" >
+        <div class="body-overlay">
+        <div class="row">
+        <div class="col-9">
+            <div class="flex justify-content-between">
+                <div class="logo1 align-self-start">
+                    <img src="./images/mytellogo.png" width="150px" alt="" />
+                </div>
+                <div class="owl">
+                    <img src="./images/Game_Name.png" alt="" />
+                </div>
+                <div class="logo2 align-self-start">
+                    <img src="./images/myidlogo.png" alt="" width="150px" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <img src="./images/AMchine 1.png" width = "1500" height = "600">
+                    <div class="prizeList">
+                        <ul class="flex justify-content-between align-item-center">
+                                            <li class="normal">
+                                                <a ng-click="getPrize('car')">
+                                                    <div class="prize-img-wrapper">
+                                                        <span>2</span>
+                                                        <img src="./images/Emoney.png" alt="car Logo" >
+                                                    </div>
+                                                </a>
+        
+                                            </li>
+                                            <li class="normal align-item-center footer-part">
+                                                <a ng-click="getPrize('car')">
+                                                    <div class="prize-img-wrapper">
+                                                        <span>2</span>
+                                                        <img src="./images/TV.png" alt="car Logo" />
+                                                    </div>
+                                                </a>
+        
+                                            </li>
+                                            <li class="normal">
+                                                <a ng-click="getPrize('car')">
+                                                    <div class="prize-img-wrapper">
+                                                        <span>2</span>
+                                                        <img src="./images/Wifi Signal.png" alt="car Logo" />
+                                                    </div>
+                                                </a>
+        
+                                            </li>
+                                            <li class="btn-action" ng-mouseup="changReleaseIcon()"
+                                                ng-mousedown="changePressIcon()" ng-if="!isButtonClick"
+                                                ng-click="getWinnerNumber()">
+                                                <img src="./images/Buttom.png" alt="Buttom" />
+                                            </li>
+                                            
+        
+                                        </ul>
+        
+                                    </div>
+                </div>
+                <div class="col-4">
+                    <br><br><br><br>
+                    <img src="./images/PUG.png" width = "350" height = "500">
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-3">
+            <img src="./images/right.png" height="1000">
+            <p>abcd</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="wackyjacky.js"></script>
+</body>
+</html>
