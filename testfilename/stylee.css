@@ -1,0 +1,65 @@
+/*
+*  
+*
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 14px;
+  background: url("../images/Wacky Jacky Lucy Screen LIVE.png") no-repeat top
+    center fixed;
+  padding-bottom: 20px;
+  background-size: contain;
+  font-family: "CoconLight";
+}
+.wrapper {
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  min-height: calc(100vh - 50px);
+  padding: 10px 20px;
+}
+.prizeList ul li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 135px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.prizeList li.normal {
+  background: url(../images/inactive.png) no-repeat;
+  background-size: cover;
+}
+
+.prizeList li.active {
+  background: url(../images/active.png) no-repeat;
+  background-size: cover;
+  background-size: 108%;
+  background-position: -7px -4px;
+  width: 160px;
+  height: 130px;
+}
+.prizelist .prize-img-wrapper {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
